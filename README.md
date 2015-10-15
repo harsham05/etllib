@@ -37,6 +37,12 @@ On Mac OSX, Apple has implemented their own version of the file command. However
 $ brew install libmagic
 ```
 
+On Linux, 
+```
+$ sudo apt-get update
+$ sudo apt-get install libmagic-dev
+```
+
 After brew finished installing, the test for the libmagic man page should pass.
 
 
@@ -48,7 +54,7 @@ For Tika support you will need to install [tika-python](https://github.com/chris
 ```
 git clone https://github.com/chrismattmann/etllib.git
 cd etllib
-python bootstrap.py
+python -d bootstrap.py
 bin/buildout install with-tika
 ```
 
