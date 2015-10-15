@@ -65,7 +65,7 @@ options, args = parser.parse_args()
 
 ######################################################################
 # load/install setuptools
-
+''' 
 try:
     if options.allow_site_packages:
         import setuptools
@@ -90,6 +90,8 @@ if not options.allow_site_packages:
 
 setup_args = dict(to_dir=tmpeggs, download_delay=0)
 ez['use_setuptools'](**setup_args)
+
+'''
 import setuptools
 import pkg_resources
 
